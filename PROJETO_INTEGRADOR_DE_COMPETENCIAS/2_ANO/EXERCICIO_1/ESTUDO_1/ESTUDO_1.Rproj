@@ -1,0 +1,4 @@
+base_csv <- read.csv('pacientes.csv')
+colnames (base_csv) <- c('ID', 'Idade do Segurado', 'Código do Procedimento Principal', 'Valor Total Liberado')
+
+hist(base_csv$`Idade do Segurado`, breaks = 10, col = 'blue', xlab = 'Idade do Segurado', ylab = 'Frequência', main = 'Pacientes – Relação de idades')
